@@ -2,32 +2,111 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
+@font-face { font-family: "Emmanuelle"; src: url("/Emmanuelle.ttf")}
+@font-face { font-family: "Montserrat-Black"; src: url("/Montserrat-Black.ttf")}
+@font-face { font-family: "Montserrat-Medium"; src: url("/Montserrat-Medium.ttf")}
+@font-face { font-family: "Montserrat-Light"; src: url("/Montserrat-Light.ttf")}
+@font-face { font-family: "Montserrat-Bold"; src: url("/Montserrat-Bold.ttf")}
+
+
+
+/* global.css or relevant CSS file */
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+    font-family: 'Montserrat', sans-serif;
   }
-}
+  
+  .navbar {
+    position: relative;
+  }
+  
+  .menu-icon {
+    cursor: pointer;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 64px; /* Adjust based on your navbar height */
+    right: 16px;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  @media (min-width: 1024px) {
+    .navbar {
+      width: 70%;
+      margin: 0 auto;
+      padding: 16px;
+    }
+  
+    .menu-icon {
+      display: none;
+    }
+  
+    .navbar-items {
+      display: flex;
+      gap: 32px;
+      align-items: center;
+    }
+  
+    .dropdown-menu {
+      display: none;
+    }
+  }
+
+  
+  /* global.css or relevant CSS file */
+
+  
+  
+  /* global.css or relevant CSS file */
+
+  .section-header {
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    width: 90vw;
+    margin: 0 auto;
+    padding-top: 16px;
+  }
+  
+  .section-header h3 {
+    font-size: 2rem; /* 32px */
+    font-family: 'Emmanuelle', serif;
+  }
+  
+  @media (min-width: 640px) {
+    .section-header {
+      justify-content: start;
+      width: 80vw;
+      padding-top: 24px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .section-header {
+      width: 65vw;
+      padding-top: 32px;
+    }
+  
+    .section-header h3 {
+      font-size: 2.5rem; /* 40px */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .section-header {
+      width: 60vw;
+    }
+  
+    .section-header h3 {
+      font-size: 3rem; /* 48px */
+    }
+  }
+  
