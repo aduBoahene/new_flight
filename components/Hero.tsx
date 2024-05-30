@@ -1,6 +1,6 @@
 "use client";
 
-import { Bed, Check, Plane } from "lucide-react";
+import { Bed, Check, Plane, X } from "lucide-react";
 import React, { ReactNode, useEffect, useState } from "react";
 
 export const Hero = () => {
@@ -10,7 +10,7 @@ export const Hero = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImage((prevImage) => (prevImage + 1) % images.length);
-    }, 3000); // Change image every 3 seconds
+    }, 3000); 
 
     return () => clearInterval(interval);
   }, [images.length]);
@@ -22,7 +22,6 @@ export const Hero = () => {
   };
 
   const bookflight=()=>{
-    //alert("Booking FLight")
     setIsOpen(true)
   }
 
@@ -144,7 +143,9 @@ export const Hero = () => {
         </div>
       </div>
 
-      <Modal isOpen={isOpen} onClose={() => setIsOpen(!isOpen)} notificationTitle="Success" message="Booking Successfull" icon={undefined} />
+      {/* <Modal isOpen={isOpen} onClose={() => setIsOpen(!isOpen)} notificationTitle="Success" message="Booking Successfull" icon={undefined} /> */}
+      <Modal isOpen={isOpen} onClose={() => setIsOpen(!isOpen)} notificationTitle="Success" message="Booking Unuccessfull" icon={undefined} status={`ERRORR`}/>
+
     </div>
   );
 };
@@ -156,14 +157,15 @@ interface ModalProps {
   message: string
   icon: ReactNode
   notificationTitle: string
+  status: string
 }
 
 
-const Modal = ({ isOpen, onClose, message, icon , notificationTitle}: ModalProps) => {
+const Modal = ({ isOpen, onClose, message, icon , notificationTitle, status}: ModalProps) => {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-75">
+    <div className="fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-75 p-4">
       <div className="bg-white rounded-lg p-6 w-80 relative">
         <button
           className="absolute top-2 right-2 text-gray-500"
@@ -172,9 +174,11 @@ const Modal = ({ isOpen, onClose, message, icon , notificationTitle}: ModalProps
           &times;
         </button>
         <div className="flex flex-col items-center">
-          <h3 className="text-green-600 text-3xl font-bold" style={{fontFamily:'Montserrat-Light'}}>{notificationTitle}</h3>
-          <Check className="text-green-600 text-6xl rounded-full border border-2 border-green-600" style={{height:'150px', width:'150px'}}/>
-          <p className="mt-4 text-lg font-semibold text-green-600" style={{fontFamily:'Montserrat-Light'}}>{message}</p>
+        {status!=='ERROR'?<h3 className="text-green-600 text-3xl font-bold" style={{fontFamily:'Montserrat-Light'}}>{notificationTitle}</h3>:<h3 className="text-red-600 text-3xl font-bold" style={{fontFamily:'Montserrat-Light'}}>{notificationTitle}</h3>}
+          {status!=='ERROR'?<Check className="text-green-600 text-6xl rounded-full border border-2 border-green-600" style={{height:'100px', width:'100px'}}/>:<X className="text-red-600 text-6xl rounded-full border border-2 border-red-600" style={{height:'100px', width:'100px'}}/>
+}
+{status!=='ERROR'? <p className="mt-4 text-lg font-semibold text-green-600" style={{fontFamily:'Montserrat-Light'}}>{message}</p>: <p className="mt-4 text-lg font-semibold text-red-600" style={{fontFamily:'Montserrat-Light'}}>{message}</p>}
+         
         </div>
       </div>
     </div>
