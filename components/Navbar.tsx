@@ -24,7 +24,7 @@ export const Navbar = () => {
       <div className='p-4 flex justify-between items-center lg:w-[70%] lg:mx-auto lg:p-2'>
         <Image src="/rondure-logo-new.png" width={180} height={180} alt="logo" />
 
-        <div className='hidden lg:flex gap-8 items-center'>
+        <div className='hidden lg:flex gap-8 items-center' style={{fontFamily:'Montserrat-Medium'}}>
           <span>Home</span>
           <span>Flights & Hotels</span>
           <span>Visa Assistance</span>
