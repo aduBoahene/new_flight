@@ -1,0 +1,7 @@
+/* styles.css */
+@media (min-width: 1024px) and (max-width: 1281px) {
+    .navbar-container {
+      width: 95% !important;
+    }
+  }
+  
