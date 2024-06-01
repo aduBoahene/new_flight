@@ -21,10 +21,10 @@ export const Navbar = () => {
           rel="stylesheet"
         />
       </Head>
-      <div className='p-4 flex justify-between items-center lg:w-[70%] lg:mx-auto lg:p-2'>
+      <div className='navbar-container'>
         <Image src="/rondure-logo-new.png" width={180} height={180} alt="logo" />
 
-        <div className='hidden lg:flex gap-8 items-center' style={{fontFamily:'Montserrat-Medium'}}>
+        <div className='menu-items' style={{fontFamily:'Montserrat-Medium'}}>
           <span>Home</span>
           <span>Flights & Hotels</span>
           <span>Visa Assistance</span>
@@ -35,21 +35,83 @@ export const Navbar = () => {
           <span>Contact Us</span>
         </div>
 
-        <Menu className='block lg:hidden cursor-pointer' onClick={toggleMenu} />
+        <Menu className='menu-icon' onClick={toggleMenu} />
 
         {isMenuOpen && (
-          <div className='absolute top-16 right-4 bg-white shadow-md p-4 rounded-md flex flex-col gap-4 lg:hidden'>
-            <span onClick={toggleMenu}>Home</span>
-            <span onClick={toggleMenu}>Flights & Hotels</span>
-            <span onClick={toggleMenu}>Visa Assistance</span>
-            <span onClick={toggleMenu}>Business Travels</span>
-            <span onClick={toggleMenu}>Vacations</span>
-            <span onClick={toggleMenu}>Car Rental</span>
-            <span onClick={toggleMenu}>About</span>
-            <span onClick={toggleMenu}>Contact Us</span>
+          <div className='dropdown-menu'>
+            <span className='menu-item font-bold' onClick={toggleMenu}>Home</span>
+            <span className='menu-item' onClick={toggleMenu}>Flights & Hotels</span>
+            <span className='menu-item' onClick={toggleMenu}>Visa Assistance</span>
+            <span className='menu-item' onClick={toggleMenu}>Business Travels</span>
+            <span className='menu-item' onClick={toggleMenu}>Vacations</span>
+            <span className='menu-item' onClick={toggleMenu}>Car Rental</span>
+            <span className='menu-item' onClick={toggleMenu}>About</span>
+            <span className='menu-item' onClick={toggleMenu}>Contact Us</span>
           </div>
         )}
       </div>
+      <style jsx>{`
+        .navbar-container {
+          padding: 1rem;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 70%;
+          margin-left: auto;
+          margin-right: auto;
+        }
+       
+
+        @media (min-width:1024px) and (max-width:1673px) {
+          .navbar-container {
+            width: 100%;
+            padding: 0.5rem;
+            flex-direction: column;
+            align-items: flex-start;
+            
+          }
+
+          .menu-item{
+            font-size: 13px
+          }
+        }
+
+        @media (max-width: 1024px) {
+          .navbar-container {
+              background-color: white;
+          }
+      }
+      
+        .menu-items {
+          display: none;
+        }
+        .menu-icon {
+          display: block;
+          cursor: pointer;
+        }
+        @media (min-width: 1024px) {
+          .menu-items {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+          }
+          .menu-icon {
+            display: none;
+          }
+        }
+        .dropdown-menu {
+          position: absolute;
+          top: 4rem;
+          right: 1rem;
+          background: white;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          padding: 1rem;
+          border-radius: 0.5rem;
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+        }
+      `}</style>
     </>
   );
 };
