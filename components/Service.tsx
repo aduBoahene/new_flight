@@ -9,9 +9,9 @@ interface ServiceProps {
 
 export const Service = ({ title, description }: ServiceProps) => {
   return (
-    <div className="flex flex-col mb-4 items-center justify-center gap-4 md:flex-row md:items-start md:gap-6">
+    <div className="flex mb-4 gap-4 md:flex-row md:gap-6">
       <ShieldCheck size={40} color="#ed701b" className='flex' />
-      <div className="text-center md:text-left max-w-xs md:max-w-none">
+      <div className="t md:text-left max-w-xs md:max-w-none">
         <h3 className="text-lg md:text-xl" style={{ fontFamily: "Montserrat-Black" }}>{title}</h3>
         <p className="mt-2" style={{ fontFamily: "Montserrat-Light" }}>{description}</p>
         <Link href="#">
