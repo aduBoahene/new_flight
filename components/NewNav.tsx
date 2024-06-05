@@ -29,9 +29,7 @@ export const NewNav = () => {
       <nav className="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
-          {/* <img src="https://flowbite.com/docs/images/logo.svg" className="h-8" alt="Flowbite Logo" /> */}
           <Image src="/rondure-logo-new.png" width={180} height={180} alt="logo" />
-
         </a>
         <button data-collapse-toggle="navbar-dropdown" type="button" className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-dropdown" aria-expanded="false">
           <span className="sr-only">Open main menu</span>
@@ -45,7 +43,7 @@ export const NewNav = () => {
               <a href="/" className="block py-2 px-3 text-[#ed701b] rounded md:bg-transparent md:text-[#ed701b] md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent" aria-current="page" style={{fontSize:'14px'}}>Home</a>
             </li>
             <li>
-              <a href="#" className="block py-2 px-3 text-black bg-blue-700 rounded md:bg-transparent md:text-[#ed701b]-700 md:p-0 md:dark:text-blue-500 md:dark:bg-transparent" style={{fontSize:'14px'}}>Flights & Hotels</a>
+              <a href="#" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#ed701bb0] md:p-0 dark:text-white md:dark:hover:text-[#ed701bb0] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" style={{fontSize:'14px'}}>Flights & Hotels</a>
             </li>
             <li className="relative group">
               <button id="dropdownNavbarLink" className="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent" style={{fontSize:'14px'}}>
@@ -54,13 +52,13 @@ export const NewNav = () => {
                   <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
                 </svg>
               </button>
-              <div id="dropdownNavbar" className="absolute left-0 z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600 group-hover:block">
-                <ul className="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+              <div id="dropdownNavbar" className="absolute left-0 z-10 hidden font-normal bg-[#171766] divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600 group-hover:block">
+                <ul className="py-2 text-sm text-white dark:text-white" aria-labelledby="dropdownLargeButton">
                   <li>
-                    <a href="#" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white" style={{fontSize:'14px'}}>Travel Restrictions</a>
+                    <a href="#" className="block px-4 py-2 hover:bg-white-100 md:hover:text-[#ed701bb0] dark:hover:bg-white dark:hover:text-[#ed701bb0]" style={{fontSize:'14px'}}>Travel Restrictions</a>
                   </li>
                   <li>
-                    <a href="#" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white" style={{fontSize:'14px'}}>Visa Services</a>
+                    <a href="#" className="block px-4 py-2 hover:bg-white-100 md:hover:text-[#ed701bb0] dark:hover:bg-white dark:hover:text-[#ed701bb0]" style={{fontSize:'14px'}}>Visa Services</a>
                   </li>
                  
                 </ul>
@@ -74,25 +72,26 @@ export const NewNav = () => {
                   <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
                 </svg>
               </button>
-              <div id="dropdownNavbar" className="absolute left-0 z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600 group-hover:block">
-                <ul className="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+              <div id="dropdownNavbar" className="absolute left-0 z-10 hidden font-normal bg-[#171766] divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600 group-hover:block">
+                <ul className="py-2 text-sm text-white dark:text-gray-400" aria-labelledby="dropdownLargeButton">
                   <li>
-                    <a href="#" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white" style={{fontSize:'13px'}}>Flight Ticket Reservation</a>
+                    <a href="#" className="block px-4 py-2 hover:bg-[#171766] md:hover:text-[#ed701bb0] dark:hover:bg-[#171766] dark:hover:text-[#ed701bb0]" style={{fontSize:'13px'}}>Flight Ticket Reservation</a>
                   </li>
                 </ul>
-                {/* <div className="py-1">
-                  <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign out</a>
-                </div> */}
+                
               </div>
             </li>
             <li>
-              <a href="#" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" style={{fontSize:'14px'}}>Vacations</a>
+              <a href="#" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#ed701bb0] md:p-0 dark:text-white md:dark:hover:text-[#ed701bb0] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" style={{fontSize:'14px'}}>Vacations</a>
             </li>
             <li>
-              <a href="/Contact-us" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" style={{fontSize:'14px'}}>Contact Us</a>
+              <a href="#" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#ed701bb0] md:p-0 dark:text-white md:dark:hover:text-[#ed701bb0] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" style={{fontSize:'14px'}}>Car Rental</a>
             </li>
             <li>
-              <a href="#" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" style={{fontSize:'14px'}}>About Us</a>
+              <a href="/about-us" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#ed701bb0] md:p-0 dark:text-white md:dark:hover:text-[#ed701bb0] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" style={{fontSize:'14px'}}>About Us</a>
+            </li>
+            <li>
+              <a href="/contact-us" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#ed701bb0] md:p-0 dark:text-white md:dark:hover:text-[#ed701bb0] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" style={{fontSize:'14px'}}>Contact Us</a>
             </li>
           </ul>
         </div>
