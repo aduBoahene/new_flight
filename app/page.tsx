@@ -10,7 +10,6 @@ export default function Home() {
   return (
     <div>
       {/* <Navbar /> */}
-      <NewNav />
       <Hero />
       <Services />
       {/* <SectionHeader title="Vacation Destinations" /> */}
