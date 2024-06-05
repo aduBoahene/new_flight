@@ -30,7 +30,7 @@ export default function Page() {
               className="text-white p-4 bg-transparent font-bold"
               style={{ fontFamily: "Montserrat-Medium" }}
             >
-              TRAVEL THE World Hassle FREE
+              TRAVEL THE World Hassle FREE.
             </h4>
           </div>
         </div>
