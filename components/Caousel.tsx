@@ -50,14 +50,14 @@ const Carousel = ({ items }: CarouselProps) => {
   }, []);
 
   return (
-    <div className="carousel-container">
+    <div className="carousel-container md:mt-8">
       <div 
         className="carousel-inner" 
         style={{ transform: `translateX(-${(currentIndex * (100 / itemsPerPage))}%)` }}
       >
         <div className="carousel-items">
           {items.concat(items).map((item, index) => (
-            <div key={index} className="h-40 carousel-item md:h-48 md:mx-4">
+            <div key={index} className="h-40 mt-4 carousel-item md:h-48 md:mx-4 ">
               <Image 
                 src={`/${item.url}`} 
                 alt={item.city} 

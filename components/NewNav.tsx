@@ -42,9 +42,9 @@ export const NewNav = () => {
             <li>
               <a href="/" className="block py-2 px-3 text-[#ed701b] rounded md:bg-transparent md:text-[#ed701b] md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent" aria-current="page" style={{fontSize:'14px'}}>Home</a>
             </li>
-            <li>
+            {/* <li>
               <a href="#" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#ed701bb0] md:p-0 dark:text-white md:dark:hover:text-[#ed701bb0] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" style={{fontSize:'14px'}}>Flights & Hotels</a>
-            </li>
+            </li> */}
             <li className="relative group">
               <button id="dropdownNavbarLink" className="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#ed701bb0] md:p-0 md:w-auto dark:text-white md:dark:hover:text-[#ed701bb0] dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent" style={{fontSize:'14px'}}>
                 Vis Assistance
@@ -55,7 +55,7 @@ export const NewNav = () => {
               <div id="dropdownNavbar" className="absolute left-0 z-10 hidden font-normal bg-[#171766] divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600 group-hover:block">
                 <ul className="py-2 text-sm text-white dark:text-white" aria-labelledby="dropdownLargeButton">
                   <li>
-                    <a href="#" className="block px-4 py-2 hover:bg-white-100 md:hover:text-[#ed701bb0] dark:hover:bg-white dark:hover:text-[#ed701bb0]" style={{fontSize:'14px'}}>Travel Restrictions</a>
+                    <a href="/travel-restrictions" className="block px-4 py-2 hover:bg-white-100 md:hover:text-[#ed701bb0] dark:hover:bg-white dark:hover:text-[#ed701bb0]" style={{fontSize:'14px'}}>Travel Restrictions</a>
                   </li>
                   <li>
                     <a href="#" className="block px-4 py-2 hover:bg-white-100 md:hover:text-[#ed701bb0] dark:hover:bg-white dark:hover:text-[#ed701bb0]" style={{fontSize:'14px'}}>Visa Services</a>
@@ -75,7 +75,7 @@ export const NewNav = () => {
               <div id="dropdownNavbar" className="absolute left-0 z-10 hidden font-normal bg-[#171766] divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600 group-hover:block">
                 <ul className="py-2 text-sm text-white dark:text-gray-400" aria-labelledby="dropdownLargeButton">
                   <li>
-                    <a href="#" className="block px-4 py-2 hover:bg-[#171766] md:hover:text-[#ed701bb0] dark:hover:bg-[#171766] dark:hover:text-[#ed701bb0]" style={{fontSize:'13px'}}>Flight Ticket Reservation</a>
+                    <a href="/business-travel" className="block px-4 py-2 hover:bg-[#171766] md:hover:text-[#ed701bb0] dark:hover:bg-[#171766] dark:hover:text-[#ed701bb0]" style={{fontSize:'13px'}}>Flight Ticket Reservation</a>
                   </li>
                 </ul>
                 

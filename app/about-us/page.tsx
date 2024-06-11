@@ -24,16 +24,15 @@ export default function Page() {
         className="md:h-1/4 bg-cover relative h-64 md:h-[700px]"
         style={{ backgroundImage: `url('family-vacation.jpeg')` }}
       >
-        <div className="w-[90%] md:w-[70%] flex justify-center md:pr-32 absolute bottom-8 right-0">
-          <div className="bg-[#ed701bb0] w-full md:w-2/5 mb-8 md:mb-0">
+         <div className="bg-[#ed701b] w-full md:mx-auto md:w-1/6 mb-8 md:mb-0">
             <h4
-              className="text-white p-4 bg-transparent font-bold"
-              style={{ fontFamily: "Montserrat-Medium" }}
+              className="text-white text-center p-4 bg-transparent font-bold"
+              style={{ fontFamily: "Emmanuelle" }}
             >
               TRAVEL THE World Hassle FREE.
             </h4>
           </div>
-        </div>
+       
       </div>
 
       <div className="text-center flex flex-col justify-center mt-4 md:mt-8">
