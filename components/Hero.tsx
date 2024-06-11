@@ -45,13 +45,13 @@ export const Hero = () => {
                 <button
                   className={`inline-block p-4 rounded-t-lg border-b-2 ${
                     activeTab === "tab1"
-                      ? "border-[#ed701b] text-[#ed701b]"
-                      : ""
+                      ? "bg-[#ed701b] text-white"
+                      : "bg-[#ed701b2b]"
                   }`}
                   onClick={() => handleTabClick("tab1")}
                 >
-                  <div className="flex gap-2">
-                    <Plane /> Flight
+                  <div className="flex gap-2 items-center">
+                    <Plane /> <span className={`${!activeTab ? 'text-black-200':''}`}>Flight</span>
                   </div>
                 </button>
               </li>
@@ -59,13 +59,14 @@ export const Hero = () => {
                 <button
                   className={`inline-block p-4 rounded-t-lg border-b-2 ${
                     activeTab === "tab2"
-                      ? "border-[#ed701b] text-[#ed701b]"
-                      : ""
+                      ? "bg-[#ed701b] text-white"
+                      : "bg-[#ed701b2b] text-[#1c144d]"
                   }`}
                   onClick={() => handleTabClick("tab2")}
                 >
-                  <div className="flex gap-2">
-                    <Bed /> Hotels
+                  <div className="flex gap-2 items-center">
+                    {/* <Bed /> <span className="text-[#1c144d]">Hotels</span> */}
+                    <Bed /> <span className={`${!activeTab ? 'text-black-200':''}`}>Hotels</span>
                   </div>
                 </button>
               </li>
