@@ -38,8 +38,8 @@ export const Hero = () => {
       }}
     >
       <div className="flex flex-col w-[90%] md:w-[80%]">
-        <div className="border w-full md:w-[80%] mx-auto border-2 bg-[#fffef7] p-4 md:p-8 rounded-md">
-          <div className="container mx-auto p-6 bg-white shadow rounded-lg">
+        <div className="border w-full md:w-[80%] mx-auto border-0 bg-[#fffef7] p-4 md:p-8 rounded-md">
+          <div className="container mx-auto p-6 bg-white shadow rounded-lg border-0">
             <ul className="flex flex-wrap text-sm font-medium text-center text-gray-500 border-b border-gray-200">
               <li className="mr-2">
                 <button
