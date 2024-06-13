@@ -147,7 +147,7 @@ export const NewHero = () => {
     //   <Modal isOpen={isOpen} onClose={() => setIsOpen(!isOpen)} notificationTitle="Success" message="Booking Unuccessfull" icon={undefined} status={`ERRORR`}/>
 
     // </div>
-    <div className="relative h-[500px] bg-gray-200 md:mb-24 md:w-[80%] md:mx-auto md:p-8" style={{
+    <div className="relative h-[500px] bg-gray-200 md:mb-24 md:w-[90%] md:mx-auto md:p-8" style={{
       backgroundImage: `url(${images[currentImage]})`,
       backgroundSize: "cover",
       backgroundPosition: "center",
