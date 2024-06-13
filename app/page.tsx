@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <div>
       {/* <NewHero /> */}
-      <Hero/>
+      <NewHero/>
       <Services />
       <CarouselDisplay/>
       <SectionHeader title="Our Range of Services" />
