@@ -210,7 +210,7 @@ export const NewHero = () => {
                                   <input
                                       type="text"
                                       placeholder="Origin"
-                                      className="w-full mb-2 md:w-1/2 rounded-md"
+                                      className="w-full mb-2 md:w-1/2 rounded-md" style={{fontFamily:"Montserrat-Medium"}}
                                   />
                                   <input
                                       type="text"
@@ -221,18 +221,18 @@ export const NewHero = () => {
                               <div className="md:flex md:gap-2 md:items-center md:mt-2">
                                   <input
                                       type="date"
-                                      className="mb-2 rounded-md w-full md:w-1/4"
+                                      className="mb-2 rounded-md w-full md:w-1/4" style={{fontFamily:"Montserrat-Medium"}}
                                   />
                                   <input
                                       type="date"
-                                      className="mb-2 rounded-md w-full md:w-1/4"
+                                      className="mb-2 rounded-md w-full md:w-1/4" style={{fontFamily:"Montserrat-Medium"}}
                                   />
                                   <input
                                       type="text"
                                       placeholder="No. of Passengers"
-                                      className="mb-2 w-full md:w-1/4 rounded-md"
+                                      className="mb-2 w-full md:w-1/4 rounded-md" style={{fontFamily:"Montserrat-Medium"}}
                                   />
-                                  <button onClick={() => bookflight()} className="bg-[#ed701b] p-4 w-full mb-2 md:w-1/4 rounded-md text-white">
+                                  <button onClick={() => bookflight()} className="bg-[#ed701b] p-4 w-full mb-2 md:w-1/4 rounded-md text-white" style={{fontFamily:"Montserrat-Medium"}}>
                                       Search
                                   </button>
                               </div>
