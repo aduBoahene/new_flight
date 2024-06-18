@@ -12,25 +12,25 @@ export default function Page() {
   return (
     <div className="border border-2">
       <div
-        className="relative flex items-center h-64 md:h-[600px] bg-cover bg-center"
+        className="relative p-4 flex items-center h-64 md:h-[600px] bg-cover bg-center"
         style={{ backgroundImage: `url('logistics-packing.jpeg')` }}
       >
         <div className="w-full p-4 bg-opacity-75 bg-black-100 md:w-[70%] md:mx-auto">
           <h3
-            className="text-3xl text-white font-extrabold"
+            className="text-xl md:text-3xl text-white font-extrabold"
             style={{ fontFamily: "Montserrat-Medium" }}
           >
             Rondure E-Commerce
           </h3>
           <h3
-            className="text-3xl text-white font-extrabold"
+            className="text-xl md:text-3xl text-white font-extrabold"
             style={{ fontFamily: "Montserrat-Medium" }}
           >
             Logistics
           </h3>
 
           <p
-            className="mt-4 md:mt-8 text-white text-xl md:w-3/5 leading-relaxed"
+            className="mt-4 md:mt-8 text-white text-xl md:w-3/5 md:leading-relaxed"
             style={{ fontFamily: "Montserrat-Medium" }}
           >
             Optimise your end-to-end e-commerce logistics, with order

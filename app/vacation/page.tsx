@@ -40,7 +40,7 @@ export default function Page() {
   return (
     <div>
       <div
-        className="relative flex justify-center items-center h-64 md:h-[700px] bg-cover"
+        className="relative flex justify-center items-center h-64 md:h-[700px] bg-cover bg-center"
         style={{ backgroundImage: `url('KN.jpg')` }}
       >
         <div className="w-full p-4 md:w-[70%] md:mx-auto">

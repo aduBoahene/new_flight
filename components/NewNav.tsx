@@ -40,13 +40,11 @@ export const NewNav = () => {
         <div className="hidden w-full md:block md:w-auto" id="navbar-dropdown">
           <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
             <li>
-              <a href="/" className="block py-2 px-3 text-[#ed701b] rounded md:bg-transparent md:text-[#ed701b] md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent" aria-current="page" style={{fontSize:'11px', fontFamily:'Montserrat-Medium'}}>Home</a>
+              <a href="/" className="block py-2 px-3 text-[#ed701b] rounded md:bg-transparent md:text-[#ed701b] md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent" aria-current="page" style={{fontSize:'14px', fontFamily:'Montserrat-Medium'}}>Home</a>
             </li>
-            {/* <li>
-              <a href="#" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#ed701bb0] md:p-0 dark:text-white md:dark:hover:text-[#ed701bb0] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" style={{fontSize:'11px', fontFamily:'Montserrat-Medium'}}>Flights & Hotels</a>
-            </li> */}
+            
             <li className="relative group">
-              <button id="dropdownNavbarLink" className="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#ed701bb0] md:p-0 md:w-auto dark:text-white md:dark:hover:text-[#ed701bb0] dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent" style={{fontSize:'11px', fontFamily:'Montserrat-Medium'}}>
+              <button id="dropdownNavbarLink" className="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#ed701bb0] md:p-0 md:w-auto dark:text-white md:dark:hover:text-[#ed701bb0] dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent" style={{fontSize:'14px', fontFamily:'Montserrat-Medium'}}>
                 Visa Assistance
                 <svg className="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                   <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4" />
@@ -55,10 +53,10 @@ export const NewNav = () => {
               <div id="dropdownNavbar" className="absolute left-0 z-10 hidden font-normal bg-[#171766] divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600 group-hover:block">
                 <ul className="py-2 text-sm text-white dark:text-white" aria-labelledby="dropdownLargeButton">
                   <li>
-                    <a href="/travel-restrictions" className="block px-4 py-2 hover:bg-white-100 md:hover:text-[#ed701bb0] dark:hover:bg-white dark:hover:text-[#ed701bb0]" style={{fontSize:'11px', fontFamily:'Montserrat-Medium'}}>Travel Restrictions</a>
+                    <a href="/travel-restrictions" className="block px-4 py-2 hover:bg-white-100 md:hover:text-[#ed701bb0] dark:hover:bg-white dark:hover:text-[#ed701bb0]" style={{fontSize:'14px', fontFamily:'Montserrat-Medium'}}>Travel Restrictions</a>
                   </li>
                   <li>
-                    <a href="#" className="block px-4 py-2 hover:bg-white-100 md:hover:text-[#ed701bb0] dark:hover:bg-white dark:hover:text-[#ed701bb0]" style={{fontSize:'11px', fontFamily:'Montserrat-Medium'}}>Visa Services</a>
+                    <a href="#" className="block px-4 py-2 hover:bg-white-100 md:hover:text-[#ed701bb0] dark:hover:bg-white dark:hover:text-[#ed701bb0]" style={{fontSize:'14px', fontFamily:'Montserrat-Medium'}}>Visa Services</a>
                   </li>
                  
                 </ul>
@@ -66,7 +64,7 @@ export const NewNav = () => {
               </div>
             </li>
             <li className="relative group">
-              <button style={{fontSize:'11px', fontFamily:'Montserrat-Medium'}} id="dropdownNavbarLink" className="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#ed701bb0] md:p-0 md:w-auto dark:text-white md:dark:hover:text-[#ed701bb0] dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">
+              <button style={{fontSize:'14px', fontFamily:'Montserrat-Medium'}} id="dropdownNavbarLink" className="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#ed701bb0] md:p-0 md:w-auto dark:text-white md:dark:hover:text-[#ed701bb0] dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">
                 Business Travel
                 <svg className="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                   <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4" />
@@ -82,19 +80,20 @@ export const NewNav = () => {
               </div>
             </li>
             <li>
-              <a href="/logistics-solutions" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#ed701bb0] md:p-0 dark:text-white md:dark:hover:text-[#ed701bb0] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" style={{fontSize:'11px', fontFamily:'Montserrat-Medium'}}>Logistics Solutions</a>
+              <a href="vacation" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#ed701bb0] md:p-0 dark:text-white md:dark:hover:text-[#ed701bb0] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" style={{fontSize:'14px', fontFamily:'Montserrat-Medium'}}>Vacations</a>
             </li>
             <li>
-              <a href="vacation" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#ed701bb0] md:p-0 dark:text-white md:dark:hover:text-[#ed701bb0] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" style={{fontSize:'11px', fontFamily:'Montserrat-Medium'}}>Vacations</a>
+              <a href="/logistics-solutions" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#ed701bb0] md:p-0 dark:text-white md:dark:hover:text-[#ed701bb0] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" style={{fontSize:'14px', fontFamily:'Montserrat-Medium'}}>Logistics Solutions</a>
+            </li>
+            
+            <li>
+              <a href="#" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#ed701bb0] md:p-0 dark:text-white md:dark:hover:text-[#ed701bb0] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" style={{fontSize:'14px', fontFamily:'Montserrat-Medium'}}>Cars</a>
             </li>
             <li>
-              <a href="#" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#ed701bb0] md:p-0 dark:text-white md:dark:hover:text-[#ed701bb0] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" style={{fontSize:'11px', fontFamily:'Montserrat-Medium'}}>Cars</a>
+              <a href="/about-us" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#ed701bb0] md:p-0 dark:text-white md:dark:hover:text-[#ed701bb0] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" style={{fontSize:'14px', fontFamily:'Montserrat-Medium'}}>About Us</a>
             </li>
             <li>
-              <a href="/about-us" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#ed701bb0] md:p-0 dark:text-white md:dark:hover:text-[#ed701bb0] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" style={{fontSize:'11px', fontFamily:'Montserrat-Medium'}}>About Us</a>
-            </li>
-            <li>
-              <a href="/contact" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#ed701bb0] md:p-0 dark:text-white md:dark:hover:text-[#ed701bb0] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" style={{fontSize:'11px', fontFamily:'Montserrat-Medium'}}>Contact Us</a>
+              <a href="/contact" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#ed701bb0] md:p-0 dark:text-white md:dark:hover:text-[#ed701bb0] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" style={{fontSize:'14px', fontFamily:'Montserrat-Medium'}}>Contact Us</a>
             </li>
           </ul>
         </div>

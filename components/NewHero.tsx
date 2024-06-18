@@ -183,7 +183,7 @@ export const NewHero = () => {
               <ul className="flex flex-wrap text-sm font-medium text-center text-gray-500 border-b">
                   <li className="mr-2">
                       <button
-                          className={`inline-block p-4 rounded-t-lg border-b-2 ${activeTab === "tab1" ? "bg-[#ed701b] text-white" : "bg-[#ed701b2b]"}`}
+                          className={`inline-block p-4 rounded-t-lg border-b-2 ${activeTab === "tab1" ? "bg-[#2e5c99] text-white" : "bg-[#2671d36e]"}`}
                           onClick={() => handleTabClick("tab1")}
                       >
                           <div className="flex gap-2 items-center">
@@ -193,7 +193,7 @@ export const NewHero = () => {
                   </li>
                   <li className="mr-2">
                       <button
-                          className={`inline-block p-4 rounded-t-lg border-b-2 ${activeTab === "tab2" ? "bg-[#ed701b] text-white" : "bg-[#ed701b2b] text-[#1c144d]"}`}
+                          className={`inline-block p-4 rounded-t-lg border-b-2 ${activeTab === "tab2" ? "bg-[#2e5c99] text-white" : "bg-[#2671d36e] text-[#1c144d]"}`}
                           onClick={() => handleTabClick("tab2")}
                       >
                           <div className="flex gap-2 items-center">
@@ -232,7 +232,7 @@ export const NewHero = () => {
                                       placeholder="No. of Passengers"
                                       className="mb-2 w-full md:w-1/4 rounded-md" style={{fontFamily:"Montserrat-Medium"}}
                                   />
-                                  <button onClick={() => bookflight()} className="bg-[#ed701b] p-4 w-full mb-2 md:w-1/4 rounded-md text-white" style={{fontFamily:"Montserrat-Medium"}}>
+                                  <button onClick={() => bookflight()} className="bg-[#2e5c99] hover:bg-[#2671d3] p-4 w-full mb-2 md:w-1/4 rounded-md text-white" style={{fontFamily:"Montserrat-Medium"}}>
                                       Search
                                   </button>
                               </div>
