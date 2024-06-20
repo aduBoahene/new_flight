@@ -56,7 +56,7 @@ export default function Page() {
                 href="#"
                 className={`inline-flex items-center justify-center p-4 border-b-2 ${
                   activeTab === `tab${index + 1}`
-                    ? "border-gray-300 text-gray-600"
+                    ? "border-[#ed701bb0] text-[#ed701bb0]"
                     : "border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
                 } rounded-t-lg group`}
               >
